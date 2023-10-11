@@ -1,11 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -29,18 +21,24 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Folder structure:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# common
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Directory should be used for everything that isn't a module
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# modules
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Directory should be used by everything you feel should be a "module".
 
-## Learn More
+# src/modules/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Folder where we group all files related to the same feature (here, the authentication as "auth"), instead of splitting the "auth" code everywhere, it is now centralized into a single folder.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# src/pages/
+
+Folder for a page or an API endpoint.
+
+# /src/modules/auth
+
+Everything related to the authentication.
