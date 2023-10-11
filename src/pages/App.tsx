@@ -1,7 +1,14 @@
 import React from 'react';
 
+import { Button, Input } from '../common/components/elements';
+
 const App = () => {
-  return <div>Hello world!</div>;
+  return (
+    <>
+      <Button />
+      <Input />
+    </>
+  );
 };
 
 export default App;
