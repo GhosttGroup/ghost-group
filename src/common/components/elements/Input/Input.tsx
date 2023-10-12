@@ -1,17 +1,18 @@
 import './input.css';
+
 interface InputProps {
-  placeholder: string;
-  value: string;
-  type: 'text';
-  label: string;
+  placeholder?: string;
+  value?: string;
+  type?: 'text';
+  label?: string;
 }
 
 const Input = (props:InputProps) => {
 
   return (
       <div className={"input-animation"}>
-      <label>{props.label}</label>
-         <input {...props} />
+      {props.label && <label>{props.label}</label>} 
+         <input className="input__animation" {...props} />
       </div> );
 
 };

@@ -1,13 +1,10 @@
 import React from 'react';
+import { Route, Switch } from 'react-router';
 
-import { Button, Input } from '../common/components/elements';
+import MainPage from './MainPage';
 
-const App = () => {
-  return (
-    <>
-      <Input value='qweeqw' placeholder='' type='text' label='Full Name*'/>
-    </>
-  );
-};
-
-export default App;
+export const App = () => (
+  <Switch>
+    <Route path='/' render={() => <MainPage />} />
+  </Switch>
+);
