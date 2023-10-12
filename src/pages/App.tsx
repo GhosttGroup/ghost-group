@@ -5,8 +5,7 @@ import { Button, Input } from '../common/components/elements';
 const App = () => {
   return (
     <>
-      <Button />
-      <Input />
+      <Input value='qweeqw' placeholder='' type='text' label='Full Name*'/>
     </>
   );
 };
