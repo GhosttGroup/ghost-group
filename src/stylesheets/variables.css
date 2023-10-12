@@ -1,0 +1,30 @@
+:root {
+  --primary-black: #0F0F0F;
+  --primary-color: #00CCA3;
+  --primary-gray: #697088;
+  --secondary-gray: #8D8D8D;
+  --primary-white: #FFFFFF;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 24px;
+  --font-size-xl: 32px;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --spacing-sm: 5px;
+  --spacing-md: 10px;
+  --spacing-lg: 20px;
+
+  --border-width-sm: 1px;
+  --border-width-md: 2px;
+  --border-width-lg: 3px;
+
+  --border-radius-sm: 4px;
+  --border-radius-md: 10px;
+  --border-radius-lg: 12px;
+}
