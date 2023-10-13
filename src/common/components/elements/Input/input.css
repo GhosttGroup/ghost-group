@@ -3,7 +3,7 @@
     height: 49px;
     border-radius: 0;
     color: var(--secondary-gray);
-    font-size: 14px;
+    font-size: var(--font-size-sm);
     border: none;
     border-bottom: var(--border-width-sm) solid var(--primary-border-color);
     padding: 0;
@@ -15,19 +15,19 @@ label {
     line-height: 20px;
 }
 
-.custom__input:disabled {
+.container__input:disabled {
     cursor: not-allowed;
 }
 
-.custom__input:disabled {
+.container__input:disabled {
     background-color: var(--primary-color);
 }
 
-.custom__input:hover {
+.container__input:hover {
     border-color: var(--primary-color);
 }
 
-.custom__input:focus {
+.container__input:focus {
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 5px var(--primary-color);
