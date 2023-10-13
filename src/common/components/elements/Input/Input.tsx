@@ -1,20 +1,17 @@
 import './input.css';
+import React, {InputHTMLAttributes, ReactElement} from "react";
 
-interface IInputProps {
-  placeholder?: string;
-  value?: string;
-  type?: 'text';
-  label?: string;
+interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
+    label?: string;
 }
 
-const Input = (props:IInputProps) => {
-
-  return (
-      <div className={"input__animation"}>
-      {props.label && <label>{props.label}</label>} 
-         <input className="input__animation" {...props} />
-      </div> );
+const Input = (props: IInputProps): ReactElement => {
+    return (
+        <div className='custom__input'>
+            {props.label && <label>{props.label}</label>}
+            <input className='custom__input' {...props} />
+        </div>
+    );
 };
-
 
 export default Input;

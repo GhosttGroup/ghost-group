@@ -1,10 +1,10 @@
 import React from 'react';
-import { Input } from '../../common/components/elements';
+import {Input} from '../../common/components/elements';
 
 const MainPage = () => {
-  return (
-      <Input value='asdasd' placeholder='Enter your name' type='text' label='Full Name*'/>
-  )
+    return (
+        <>MainPage</>
+    )
 }
 
 export default MainPage;

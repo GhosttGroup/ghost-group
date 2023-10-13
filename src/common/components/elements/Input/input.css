@@ -1,36 +1,34 @@
-input {
+.custom__input {
     width: 100%;
     height: 49px;
     border-radius: 0;
     color: var(--secondary-gray);
     font-size: 14px;
     border: none;
-    border-bottom: 1px solid #DEE1E9;
-}
-
-input:focus {
-    outline: none;
+    border-bottom: var(--border-width-sm) solid var(--primary-border-color);
+    padding: 0;
 }
 
 label {
     color: var(--secondary-gray);
-    font-size: 12px;
+    font-size: var(--font-size-xs);
     line-height: 20px;
 }
 
-.input__animation:disabled {
+.custom__input:disabled {
     cursor: not-allowed;
 }
 
-.input__animation:disabled {
+.custom__input:disabled {
     background-color: var(--primary-color);
 }
 
-.input__animation:hover {
+.custom__input:hover {
     border-color: var(--primary-color);
 }
 
-.input__animation:focus {
+.custom__input:focus {
+    outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 5px var(--primary-color);
 }
