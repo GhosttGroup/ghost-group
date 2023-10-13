@@ -3,9 +3,7 @@ import { Input } from '../../common/components/elements';
 
 const MainPage = () => {
   return (
-    <p>
-      <Input />
-    </p>
+      <Input value='asdasd' placeholder='Enter your name' type='text' label='Full Name*'/>
   )
 }
 

@@ -7,4 +7,5 @@ export const App = () => (
   <Switch>
     <Route path='/' render={() => <MainPage />} />
   </Switch>
+
 );
