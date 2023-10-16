@@ -8,8 +8,8 @@ interface ButtonProps {
 
 const Button = (props: ButtonProps) => {
   return (
-      <div className="button-animation">
-      <button className="button-click" onClick={props.onClick}>
+      <div className="conteiner-button">
+      <button className="custom-button" onClick={props.onClick}>
         {props.text}
       </button>
       </div>
