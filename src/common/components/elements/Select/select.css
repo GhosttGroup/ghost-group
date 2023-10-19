@@ -1,0 +1,38 @@
+.container__select {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 237px;
+    padding: 0 0 10px 0;
+    background-color: #0F0F0F;
+}
+
+.custom__label {
+    color: var(--secondary-gray);
+    font-size: var(--font-size-xs);
+    line-height: 20px;
+}
+
+.custom__select {
+    padding: 0 !important;
+    border: none;
+    border-bottom: var(--border-width-sm) solid var(--primary-border-color);
+    height: 33px;
+    color: var(--secondary-gray);
+    border-radius: 0;
+    background: none;
+    width: 100%;
+}
+
+.custom__select:disabled {
+    cursor: not-allowed;
+    background-color: var(--primary-color);
+}
+
+.custom__select:hover {
+    border-color: var(--primary-color);
+}
+
+.custom__select:focus {
+    outline: none;
+}
