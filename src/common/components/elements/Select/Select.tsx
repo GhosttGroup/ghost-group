@@ -1,29 +1,36 @@
 import React, { useState } from 'react';
-import { TfiAngleDown } from 'react-icons/tfi';
+
 import './select.css';
 
-interface SelectProps {
-  options: { label: string; value: string }[];
+type OptionType = {
+  label: string;
+  value: string;
+}
+
+  // interface ISelectProps extends InputHTMLAttributes<HTMLSelectElement> {
+
+interface ISelectProps {
+  options: OptionType[];
   name?: string;
   onChange?: (selectedValue: string) => void;
-  embeddedText?: string;
+  label?: string;
   defaultText?: string;
 }
 
-function Select({ options, onChange, embeddedText, defaultText }: SelectProps) {
-  const [selectedValue, setSelectedValue] = useState('');
-
+function Select({ options, onChange, label, defaultText }: ISelectProps) {
+  const [selectedValue, setSelectedValue] = useState('asdasd');
+//remove state and onChange, default value
   return (
     <div className='container__select'>
-      {embeddedText && <label className='custom__label'>{embeddedText + '*'}</label>}
+      {label && <label className='custom__label'>{label + '*'}</label>}
       <select
         className='custom__select'
         value={selectedValue}
-        onChange={event => {
-          const newValue = event.target.value;
-          setSelectedValue(newValue);
+        onChange={e => {
+          // const newValue = ;
+          setSelectedValue(e.target.value);
           if (onChange) {
-            onChange(newValue);
+            onChange(e.target.value);
           }
         }}
       >

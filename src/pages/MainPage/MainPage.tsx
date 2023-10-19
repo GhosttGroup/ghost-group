@@ -7,13 +7,14 @@ const MainPage = () => {
     { label: 'Backend', value: 'Backend' },
     { label: 'DevOps', value: 'DevOps' },
   ];
+
   const handleSelectChange = (selectedValue: string) => {
     // Обработка изменения значения Select
     console.log(`Selected value: ${selectedValue}`);
   };
 
   return (
-    <Select defaultText='Select a service' embeddedText='Services' options={options} onChange={handleSelectChange} />
+    <Select defaultText='Select a service' label='Services' options={options} onChange={handleSelectChange} />
   );
 };
 

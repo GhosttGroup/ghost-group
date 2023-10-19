@@ -4,7 +4,6 @@
     gap: 4px;
     width: 237px;
     padding: 0 0 10px 0;
-    background-color: #0F0F0F;
 }
 
 .custom__label {
@@ -14,14 +13,19 @@
 }
 
 .custom__select {
-    padding: 0 !important;
+    -webkit-appearance: none;
+    padding: 11px 0;
     border: none;
     border-bottom: var(--border-width-sm) solid var(--primary-border-color);
-    height: 33px;
     color: var(--secondary-gray);
     border-radius: 0;
     background: none;
     width: 100%;
+    background: transparent;
+    background-image: url("../../../../../public/assets/select_icon.svg");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 50%;
 }
 
 .custom__select:disabled {
@@ -34,5 +38,6 @@
 }
 
 .custom__select:focus {
+    border-color: var(--primary-color);
     outline: none;
 }
