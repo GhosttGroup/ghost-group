@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ChangeEvent, useState } from 'react';
 import Select from '../../common/components/elements/Select';
 
 const MainPage = () => {
@@ -7,15 +7,13 @@ const MainPage = () => {
     { label: 'Backend', value: 'Backend' },
     { label: 'DevOps', value: 'DevOps' },
   ];
+  const [selectedValue, setSelectedValue] = useState<string>('');
 
-  const handleSelectChange = (selectedValue: string) => {
-    // Обработка изменения значения Select
-    console.log(`Selected value: ${selectedValue}`);
+  const handleSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    setSelectedValue(e.target.value);
   };
 
-  return (
-    <Select defaultText='Select a service' label='Services' options={options} onChange={handleSelectChange} />
-  );
+  return <Select label='Services' options={options} onChange={handleSelectChange} value={selectedValue} />;
 };
 
 export default MainPage;
