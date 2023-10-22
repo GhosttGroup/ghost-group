@@ -8,13 +8,12 @@ interface ButtonProps {
 
 const Button = (props: ButtonProps) => {
   return (
-      <div className="conteiner-button">
-      <button className="custom-button" onClick={props.onClick}>
+    <div className='conteiner-button'>
+      <button className='custom-button' onClick={props.onClick}>
         {props.text}
       </button>
-      </div>
+    </div>
   );
 };
 
 export default Button;
-

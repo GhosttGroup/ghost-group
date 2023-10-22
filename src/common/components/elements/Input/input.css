@@ -1,0 +1,36 @@
+label {
+    color: var(--secondary-gray);
+    font-size: var(--font-size-xs);
+    line-height: 20px;
+}
+
+.custom__input {
+    width: 100%;
+    height: 49px;
+    border-radius: 0;
+    background: none;
+    color: var(--secondary-gray);
+    font-size: var(--font-size-sm);
+    border: none;
+    border-bottom: var(--border-width-sm) solid var(--primary-border-color);
+}
+
+.container__input {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.custom__input:disabled {
+    cursor: not-allowed;
+    background-color: var(--primary-color);
+}
+
+.custom__input:hover {
+    border-color: var(--primary-color);
+}
+
+.custom__input:focus {
+    outline: none;
+}

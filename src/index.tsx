@@ -6,6 +6,9 @@ import { createBrowserHistory } from 'history';
 
 import { App } from './pages/App';
 
+import './stylesheets/variables.css';
+import './stylesheets/reset.css';
+
 const history = createBrowserHistory();
 
 ReactDOM.render(

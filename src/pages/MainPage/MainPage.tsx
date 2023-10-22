@@ -6,14 +6,14 @@ const MainPage = () => {
   return (
     <p>
       <Input />
-        <Button text="Contact Us" onClick={() => { /* Обработчик клика */ }} />
+      <Button
+        text='Contact Us'
+        onClick={() => {
+          /* Обработчик клика */
+        }}
+      />
     </p>
-
-  )
-}
-
-
-
-
+  );
+};
 
 export default MainPage;

@@ -6,8 +6,6 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -40,4 +38,11 @@ table {
   border-spacing: 0;
 }
 
+<<<<<<< HEAD
 
+=======
+input:-webkit-autofill {
+  -webkit-box-shadow:0 0 0 0; /* можно изменить на любой вариант цвета */
+  -webkit-text-fill-color: none;
+}
+>>>>>>> main
