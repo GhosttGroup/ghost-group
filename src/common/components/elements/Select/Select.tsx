@@ -1,4 +1,5 @@
 import React, { SelectHTMLAttributes } from 'react';
+
 import './select.css';
 
 type OptionType = {
@@ -7,22 +8,24 @@ type OptionType = {
 };
 
 interface ISelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
-  options: OptionType[];
-  label?: string;
   defaultText?: string;
+  label?: string;
+  options: OptionType[];
 }
 
-function Select({ options, label, ...props }: ISelectProps) {
+function Select({ defaultText, label, options, ...props }: ISelectProps) {
   return (
     <div className='container__select'>
       {label && <label className='custom__label'>{label + '*'}</label>}
 
       <select className='custom__select' {...props}>
-        <option value='' disabled hidden>
-          Select a service
-        </option>
+        {defaultText && (
+          <option value='' disabled hidden>
+            {defaultText}
+          </option>
+        )}
         {options.map(option => (
-          <option key={option.value} value={option.value}>
+          <option className='custom__select_option' key={option.value} value={option.value}>
             {option.label}
           </option>
         ))}
