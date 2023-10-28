@@ -1,20 +1,19 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
+import { ButtonHTMLAttributes } from 'react';
 import './button.css';
 
-interface ButtonProps {
-  text?: string;
-  onClick?: () => void;
+interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+    text?: string;
+    children: ReactNode;
 }
 
-const Button = (props: ButtonProps) => {
-  return (
-      <div className="button-animation">
-      <button className="button-click" onClick={props.onClick}>
+const Button = (props: IButtonProps) => (
+    <button className="button" {...props}>
         {props.text}
-      </button>
-      </div>
-  );
-};
+        {props.children}
+    </button>
+);
 
 export default Button;
+
 
