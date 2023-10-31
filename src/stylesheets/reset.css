@@ -18,6 +18,8 @@ footer, header, nav, section, main {
 
 body {
   line-height: 1;
+  background: #0F0F0F;
+  color: white;
 }
 
 ol, ul {
