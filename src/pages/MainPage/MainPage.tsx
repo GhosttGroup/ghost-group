@@ -6,12 +6,9 @@ const MainPage = () => {
   return (
     <p>
       <Input />
-      <Button
-        text='Contact Us'
-        onClick={() => {
-          /* Обработчик клика */
-        }}
-      />
+        <Button>
+            Contact Us
+        </Button>
     </p>
   );
 };

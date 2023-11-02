@@ -1,18 +1,17 @@
-.conteiner-button{
-    display: inline-flex
-}
-.custom-button{
-    width: 147px;
-    height: 40px;
+.custom_button {
+    padding: 8px 32px;
     border-radius: 6px;
     overflow: hidden;
-    border: 1px solid #00CCA3;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #00CCA3;
     justify-content: center;
     align-items: center;
-    display: inline-flex
+}
+.children{
+
 }
 
-.button-click:hover {
-    background-color: #00CCA3;
-    transition: background-color 0.2s, color 0.2s;
-}
+
+
+
