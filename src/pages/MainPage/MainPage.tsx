@@ -1,7 +1,6 @@
 import React from 'react';
 import { Input } from '../../common/components/elements';
 import { Button } from '../../common/components/elements';
-
 const MainPage = () => {
   return (
     <p>
@@ -9,6 +8,7 @@ const MainPage = () => {
         <Button>
             Contact Us
         </Button>
+
     </p>
   );
 };
