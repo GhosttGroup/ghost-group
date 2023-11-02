@@ -7,10 +7,18 @@
     border-color: #00CCA3;
     justify-content: center;
     align-items: center;
+    box-shadow: 1px 4px 16px rgba(0, 210.37, 168.09, 0.25) inset;
 }
-.children{
+.button-content {
+    text-align: center;
+    color: #0F0F0F;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 24px;
+    word-wrap: break-word;
+}
 
-}
 
 
 
