@@ -6,7 +6,9 @@ interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button = (props: IButtonProps): ReactElement => (
     <button className="custom_button" {...props}>
-        {props.children}
+        <div className="button-content">
+            {props.children}
+        </div>
     </button>
 );
 
