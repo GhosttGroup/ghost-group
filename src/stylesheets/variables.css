@@ -2,13 +2,15 @@
   --primary-black: #0F0F0F;
   --primary-border-color: #DEE1E9;
   --primary-color: #00CCA3;
+  --secondary-color: #ffffff33;
   --primary-gray: #697088;
   --secondary-gray: #8D8D8D;
   --primary-white: #FFFFFF;
 
   --font-size-xs: 12px;
   --font-size-sm: 14px;
-  --font-size-md: 16px;
+  --font-size-md: 18px;
+  --font-size-ml: 20px;
   --font-size-lg: 24px;
   --font-size-xl: 32px;
 
