@@ -1,19 +1,8 @@
-import React, { ChangeEvent, useState } from 'react';
-import Select from '../../common/components/elements/Select';
+import React from 'react';
+import Header from '../../common/components/elements/Header';
+//import OurAdvantages from '../../common/components/elements/OurAdvantages';
 
 const MainPage = () => {
-  const options = [
-    { label: 'Frontend', value: 'Frontend' },
-    { label: 'Backend', value: 'Backend' },
-    { label: 'DevOps', value: 'DevOps' },
-  ];
-  const [selectedValue, setSelectedValue] = useState<string>('');
-
-  const handleSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    setSelectedValue(e.target.value);
-  };
-
-  return <Select label='Services' options={options} onChange={handleSelectChange} value={selectedValue} />;
+  return <Header />;
 };
-
 export default MainPage;

@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: var(--primary-white);
+    font-size: 40px;
+    font-weight: var(--font-weight-normal);
+    line-height: 48px;
+}
+
+.text-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px 41px;
+    margin-top: 32px;
+}
+
+@media (max-width: 1024px) {
+    .text-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-card {
+        line-height: 140%;
+    }
+    .title {
+        font-size: 36px;
+    }
+}
+
+
+
+
+
+
+
