@@ -1,15 +1,19 @@
 import React, { ReactNode, ButtonHTMLAttributes, ReactElement } from 'react';
+
 import './button.css';
 
 interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-    children: ReactNode;
-    onClick?: () => void;}
+  children: ReactNode;
+  size?: 'xs' | 'xm';
+}
 
-const Button = (props: IButtonProps): ReactElement => (
-    <button className="custom_button" {...props}>
-            {props.children}
+const Button = (props: IButtonProps): ReactElement => {
+  const { children, size = 'xs' } = props;
+  return (
+    <button className='custom_button' {...props} style={{ padding: size === 'xs' ? '8px 32px' : '16px 48px' }}>
+      {children}
     </button>
-);
-
+  );
+};
 
 export default Button;
