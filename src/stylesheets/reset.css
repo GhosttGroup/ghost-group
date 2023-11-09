@@ -28,15 +28,10 @@ blockquote, q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
-
-}
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 
 input:-webkit-autofill {
   -webkit-box-shadow:0 0 0 0; /* можно изменить на любой вариант цвета */

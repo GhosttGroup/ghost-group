@@ -1,22 +1,38 @@
+:root {
+    --button-border-color: #00CCA3;
+    --button-text-color: #0F0F0F;
+    --button-box-shadow-color: rgba(0, 210, 168, 0.25);
+}
+
 .custom_button {
     padding: 8px 32px;
     border-radius: 6px;
     overflow: hidden;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #00CCA3;
+    border: 1px solid var(--button-border-color);
     justify-content: center;
     align-items: center;
-    box-shadow: 1px 4px 16px rgba(0, 210.37, 168.09, 0.25) inset;
+    box-shadow: 1px 4px 16px var(--button-box-shadow-color) inset;
+    background: none;
+    transition: background 0.3s ease-in-out;
 }
+
+.custom_button:hover {
+    background: rgba(0, 204, 163, 0.1);
+}
+
 .button-content {
     text-align: center;
-    color: #0F0F0F;
+    color: var(--button-text-color);
     font-size: 16px;
     font-weight: 400;
     text-transform: capitalize;
     line-height: 24px;
     word-wrap: break-word;
+    transition: color 0.3s ease-in-out;
+}
+
+.custom_button:hover .button-content {
+    color: #007f63;
 }
 
 
