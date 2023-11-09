@@ -1,6 +1,6 @@
 import React, { InputHTMLAttributes, ReactElement, ReactNode } from 'react';
 
-import './input.css';
+import style from './input.module.css';
 
 interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: ReactNode;
@@ -8,14 +8,14 @@ interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
 
 const Input = (props: IInputProps): ReactElement => {
   return (
-    <div className='container__input'>
+    <div className={style.container__input}>
       {props.label && (
         <label>
           {props.label}
           {props.required && '*'}
         </label>
       )}
-      <input className='custom__input' {...props} />
+      <input className={style.custom__input} {...props} />
     </div>
   );
 };
