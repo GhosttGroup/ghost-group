@@ -1,0 +1,30 @@
+.text_card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+    width: 29%;
+    padding: 19px 20px;
+    border-radius: var(--border-radius-lg);
+    border: var( --border-width-sm) solid var(--primary-color);
+    box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.05) inset, 0px 50px 100px -20px rgba(50, 50, 93, 0.07);
+}
+
+.text_card_title {
+    color: var(--primary-white);
+    font-size: var(--font-size-md);
+    font-weight: 600;
+    line-height: 22px
+}
+
+.text_card_content {
+    color: var(--primary-gray);
+    font-size: var(--font-size-md);
+}
+
+@media (max-width: 768px) {
+    .text_card {
+        width: 100%;
+    }
+}
+
