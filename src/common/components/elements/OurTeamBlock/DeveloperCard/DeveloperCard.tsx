@@ -2,7 +2,7 @@ import React from 'react';
 
 import './developerCard.css';
 
-interface IDeveloperCardProps {
+export interface IDeveloperCardProps {
   jobPosition: string;
   name: string;
   photoURL?: string;
