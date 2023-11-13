@@ -11,7 +11,7 @@
     white-space: nowrap;
 }
 
-.text-link {
+.text_link {
     font-size: 16px;
     font-weight: 300;
     color: #FFF;
@@ -19,39 +19,39 @@
     text-decoration: none;
 }
 
-.button-container {
+.button_container {
     display: flex;
     gap: 21px;
 }
 
 @media (max-width: 1024px) {
-    .text-link {
+    .text_link {
         font-size: 14px;
     }
 
-    .button-container {
+    .button_container {
         gap: 8px;
     }
 
-    .img-logo {
+    .img_logo {
         width: 200px;
     }
 }
 
 @media (max-width: 768px) {
-    .img-logo {
+    .img_logo {
         height: 40px;
         width: 167px;
     }
     
     .nav,
-    .img-link {
+    .img_link {
         display: none;
     }
 }
 
 @media (max-width: 468px) {
-    .img-logo {
+    .img_logo {
         height: 40px;
         width: 110px;
     }
