@@ -1,8 +1,17 @@
 import React from 'react';
-import { Button } from '../../common/components/elements';
+
+import Header from '../../common/components/elements/Header';
+import OurAdvantages from '../../common/components/elements/OurAdvantages';
+import OurTeamBlock from '../../common/components/elements/OurTeamBlock/OurTeamBlock';
+
+import styles from './MainPage.module.css';
 
 const MainPage = () => {
-  return <><Button>asdsad</Button></>;
+  return <div className={styles.container}>
+    <Header />
+    <OurAdvantages />
+    <OurTeamBlock />
+  </div>;
 };
 
 export default MainPage;
