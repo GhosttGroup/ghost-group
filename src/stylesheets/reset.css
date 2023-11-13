@@ -18,8 +18,9 @@ footer, header, nav, section, main {
 
 body {
   line-height: 1;
-  background-color: #0F0F0F;
   padding: 0 5%;
+  background: #0F0F0F;
+  color: white;
 }
 
 ol, ul {
@@ -30,11 +31,6 @@ blockquote, q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none;
-}
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -42,7 +38,4 @@ table {
 
 input:-webkit-autofill {
   -webkit-box-shadow:0 0 0 0; /* можно изменить на любой вариант цвета */
-  -webkit-text-fill-color: none;
 }
-
-

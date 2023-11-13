@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from '../../common/components/elements/Header';
-//import OurAdvantages from '../../common/components/elements/OurAdvantages';
+import { Button } from '../../common/components/elements';
 
 const MainPage = () => {
-  return <Header />;
+  return <><Button>asdsad</Button></>;
 };
+
 export default MainPage;
