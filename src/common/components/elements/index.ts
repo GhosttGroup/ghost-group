@@ -1,5 +1,5 @@
 import Button from './Button';
-import DeveloperCard from './DeveloperCard';
+import DeveloperCard from './OurTeamBlock/DeveloperCard';
 import Input from './Input';
 
 export { Button, DeveloperCard, Input };
