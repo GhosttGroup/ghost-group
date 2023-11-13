@@ -1,4 +1,8 @@
 :root {
+  --button-border-color: #00CCA3;
+  --button-text-color: #0F0F0F;
+  --button-box-shadow-color: #00d2a840;
+
   --primary-black: #0F0F0F;
   --primary-border-color: #DEE1E9;
   --primary-color: #00CCA3;
