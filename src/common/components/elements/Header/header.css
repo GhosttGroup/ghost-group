@@ -24,26 +24,13 @@
     gap: 21px;
 }
 
-button {
-    width: 147px;
-    height: 40px;
-    cursor: pointer;
-}
-
 @media (max-width: 1024px) {
     .text-link {
         font-size: 14px;
     }
 
-    button {
-        width: 140px;
-    }
-
     .button-container {
         gap: 8px;
-    }
-
-    .icon-button {
     }
 
     .img-logo {
@@ -56,14 +43,16 @@ button {
         height: 40px;
         width: 167px;
     }
-
-    button {
-        width: 140px;
-    }
-
+    
     .nav,
-    .icon-button,
     .img-link {
         display: none;
+    }
+}
+
+@media (max-width: 468px) {
+    .img-logo {
+        height: 40px;
+        width: 110px;
     }
 }
