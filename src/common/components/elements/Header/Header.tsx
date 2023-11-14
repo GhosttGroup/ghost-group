@@ -6,7 +6,6 @@ import Button from '../Button';
 
 import styles from './header.module.css';
 
-
 //TODO set anchors
 const Header = () => {
   return (
