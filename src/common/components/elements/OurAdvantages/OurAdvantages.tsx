@@ -3,13 +3,13 @@ import React from 'react';
 import { advantagesArray } from '../../../config';
 import AdvantagesCard from '../AdvantagesCard';
 
-import './ouradvantages.css';
+import styles from './ourAdvantages.module.css';
 
 const OurAdvantages = () => {
   return (
-    <div className='container'>
-      <h1 className='title'>Our Advantages</h1>
-      <div className='text-cards'>
+    <div className={styles.container}>
+      <h1 className={styles.title}>Our Advantages</h1>
+      <div className={styles.text_card}>
         {advantagesArray.map((item, index) => (
           <AdvantagesCard key={index} {...item} />
         ))}

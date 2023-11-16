@@ -5,12 +5,12 @@
 
 .title {
     color: var(--primary-white);
-    font-size: 40px;
+    font-size: 32px;
     font-weight: var(--font-weight-normal);
     line-height: 48px;
 }
 
-.text-cards {
+.text_card {
     display: flex;
     flex-wrap: wrap;
     gap: 36px 41px;
@@ -18,13 +18,13 @@
 }
 
 @media (max-width: 1024px) {
-    .text-card {
+    .text_card {
         width: 100%;
     }
 }
 
 @media (max-width: 480px) {
-    .text-card {
+    .text_card {
         line-height: 140%;
     }
     .title {

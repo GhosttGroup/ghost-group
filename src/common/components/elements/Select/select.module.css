@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 4px;
     width: 100%;
-    padding: 0 0 10px 0;
+    padding-bottom: var(--spacing-md);
 }
 
 .custom__label {
@@ -14,7 +14,7 @@
 
 .custom__select {
     -webkit-appearance: none;
-    padding: 11px 0;
+    padding: var(--spacing-md) 0;
     border: none;
     background: transparent url("../../../../../public/assets/select_icon.svg") 100% 50% no-repeat;
     border-bottom: var(--border-width-sm) solid var(--primary-border-color);
@@ -36,9 +36,8 @@
     border-color: var(--primary-color);
     outline: none;
 }
-option{
-    background-color: #0F0F0F;
-    font-size: var(--font-size-sm);
-    padding: 5px;
-}
 
+.custom__select_option {
+    background-color: var(--primary-black);
+    font-size: var(--font-size-sm);
+}

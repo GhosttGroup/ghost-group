@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './advantagescard.css';
+import styles from './advantagesCard.module.css';
 
 interface IAdvantagesCardProps {
   iconSrc: string;
@@ -10,10 +10,10 @@ interface IAdvantagesCardProps {
 
 const AdvantagesCard = ({ iconSrc, title, content }: IAdvantagesCardProps) => {
   return (
-    <div className='text-card'>
+    <div className={styles.text_card}>
       <img src={iconSrc} alt='icon' />
-      <h3 className='text-card_title'>{title}</h3>
-      <p className='text-card_content'>{content}</p>
+      <h3 className={styles.text_card_title}>{title}</h3>
+      <p className={styles.text_card_content}>{content}</p>
     </div>
   );
 };
