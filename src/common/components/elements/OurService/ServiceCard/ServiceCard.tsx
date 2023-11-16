@@ -15,5 +15,6 @@ const ServiceCard = ({ iconSrc, title, content }: IServiceCardProps) => {
       <p className={styles.content}>{content}</p>
     </div>
   );
+
 };
 export default ServiceCard;

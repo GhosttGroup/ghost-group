@@ -1,11 +1,12 @@
 .container {
     background-image: url('/public/assets/Component1.svg');
     background-repeat: no-repeat;
-    background-position: right -150px;
+    background-position: 102% -110px;
+    background-size: 530px;
 }
 
 .info {
-    width: 60%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -34,27 +35,20 @@
     margin-top: 31px;
 }
 
-@media (max-width: 1210px) {
+@media (max-width: 1024px) {
     .container {
-        background-image: url('/public/assets/Vectarytexture.svg');
-        background-size: 500px;
-        background-position: right 30%;
+        background-position: 90% 20%;
+        background-size: 400px;
     }
     .info {
-        width: 42%;
-    }
-}
-
-@media (max-width: 1000px) {
-    .container {
-        background-position: right 40%;
+        width: 58%;
     }
 }
 
 @media (max-width: 768px) {
     .container {
-        background-size: 300px;
-        background-position: right 52%;
+        background-size: 250px;
+        background-position: right 48%;
     }
     .title {
         font-size: 35px;
@@ -67,9 +61,8 @@
     }
 }
 
-@media (max-width: 538px) {
+@media (max-width: 480px) {
     .container {
-        background-size: 250px;
         background-position: right 60%;
     }
 }
@@ -80,7 +73,7 @@
     }
 }
 
-@media (max-width: 345px) {
+@media (max-width: 320px) {
     .container {
         background-size: 150px;
     }
