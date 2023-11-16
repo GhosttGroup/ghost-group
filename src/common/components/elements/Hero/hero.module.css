@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    /* width: 100%; */
     margin: 0 10%;
     gap: 50px;
 }
@@ -22,13 +21,13 @@
 
 .title {
     font-size: 36px;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     line-height: 40px;
 }
 
 .content {
     font-size: 16px;
-    color: #697088;
+    color: var(--primary-gray);
 }
 
 .image {
