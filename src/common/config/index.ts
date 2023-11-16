@@ -66,3 +66,29 @@ export const headerArray = [
   { text: 'Tech Stack', link: '#' },
   { text: 'About us', link: '#' },
 ];
+export const serviceCardArray = [
+  {
+    iconSrc: 'assets/GroupIcon.svg',
+    title: 'Development',
+    content:
+      'Our AI development specialists at Feel IT Studio turn your AI visions into reality with unmatched acumen and expertise. Rely on us for all your AI development needs.',
+  },
+  {
+    iconSrc: 'assets/GroupIcon.svg',
+    title: 'Web Hosting',
+    content:
+      'Our AI development specialists at Feel IT Studio turn your AI visions into reality with unmatched acumen and expertise. Rely on us for all your AI development needs.',
+  },
+  {
+    iconSrc: 'assets/GroupIcon.svg',
+    title: 'Software Development',
+    content:
+      'Our AI development specialists at Feel IT Studio turn your AI visions into reality with unmatched acumen and expertise. Rely on us for all your AI development needs.',
+  },
+  {
+    iconSrc: 'assets/GroupIcon.svg',
+    title: 'DevOps',
+    content:
+      'Our AI development specialists at Feel IT Studio turn your AI visions into reality with unmatched acumen and expertise. Rely on us for all your AI development needs.',
+  },
+];

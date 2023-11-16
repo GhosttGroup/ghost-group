@@ -16,20 +16,20 @@ interface ISelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
 
 function Select({ options, label, ...props }: ISelectProps) {
   return (
-      <div className={style.container__select}>
-        {label && <label className={style.custom__label}>{label + '*'}</label>}
+    <div className={style.container__select}>
+      {label && <label className={style.custom__label}>{label + '*'}</label>}
 
-        <select className={style.custom__select} {...props}>
-          <option value='' disabled hidden>
-            Select a service
+      <select className={style.custom__select} {...props}>
+        <option value='' disabled hidden>
+          Select a service
+        </option>
+        {options.map(option => (
+          <option key={option.value} value={option.value}>
+            {option.label}
           </option>
-          {options.map(option => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-          ))}
-        </select>
-      </div>
+        ))}
+      </select>
+    </div>
   );
 }
 

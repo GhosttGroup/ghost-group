@@ -1,0 +1,80 @@
+.container {
+    background-image: url('/public/assets/Component1.svg');
+    background-repeat: no-repeat;
+    background-position: 102% -110px;
+    background-size: 530px;
+}
+
+.info {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: var(--font-weight-normal);
+    line-height: 48px;
+}
+
+.content {
+    color: var(--primary-gray);
+    font-size: 16px;
+    font-weight: var(--font-weight-normal);
+    line-height: 25px;
+}
+
+.cards {
+    display: flex;
+    gap: 16px;
+}
+
+.container_swiper {
+    margin-top: 31px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        background-position: 90% 20%;
+        background-size: 400px;
+    }
+    .info {
+        width: 58%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        background-size: 250px;
+        background-position: right 48%;
+    }
+    .title {
+        font-size: 35px;
+    }
+    .content {
+        font-size: 15px;
+    }
+    .info {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        background-position: right 60%;
+    }
+}
+
+@media (max-width: 380px) {
+    .container {
+        background-size: 220px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        background-size: 150px;
+    }
+}
