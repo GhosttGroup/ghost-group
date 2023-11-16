@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+    background: url('/public/assets/line2.svg') no-repeat;
+    background-position: 63%;
+}
+
+.info_button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 54px;
+}
+
+.content {
+    font-size: 16px;
+    color: #697088;
+}
