@@ -7,6 +7,7 @@ import OurTeamBlock from '../../common/components/elements/OurTeamBlock/OurTeamB
 import OurService from '../../common/components/elements/OurService/OurService';
 
 import styles from './MainPage.module.css';
+import TechStack from "../../common/components/elements/TechStack/TechStack";
 
 const MainPage = () => {
   return (
@@ -15,7 +16,9 @@ const MainPage = () => {
       <Hero />
       <OurAdvantages />
       <OurService />
+        <TechStack />
       <OurTeamBlock />
+
     </div>
   );
 };
