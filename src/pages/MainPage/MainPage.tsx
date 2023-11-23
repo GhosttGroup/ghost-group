@@ -1,15 +1,22 @@
 import React from 'react';
-import { Input } from '../../common/components/elements';
-import { Button } from '../../common/components/elements';
+
+import Header from '../../common/components/elements/Header';
+import Hero from '../../common/components/elements/Hero';
+import OurAdvantages from '../../common/components/elements/OurAdvantages';
+import OurTeamBlock from '../../common/components/elements/OurTeamBlock/OurTeamBlock';
+import OurService from '../../common/components/elements/OurService/OurService';
+
+import styles from './MainPage.module.css';
+
 const MainPage = () => {
   return (
-    <p>
-      <Input />
-        <Button>
-            Contact Us
-        </Button>
-
-    </p>
+    <div className={styles.container}>
+      <Header />
+      <Hero />
+      <OurAdvantages />
+      <OurService />
+      <OurTeamBlock />
+    </div>
   );
 };
 

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,100&family=Rubik:wght@300;400&family=Victor+Mono:ital,wght@0,400;0,700;1,100&display=swap');
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -18,6 +19,10 @@ footer, header, nav, section, main {
 
 body {
   line-height: 1;
+  padding: 0 5%;
+  background: #0F0F0F;
+  color: white;
+  font-family: 'Rubik', sans-serif;
 }
 
 ol, ul {
@@ -28,15 +33,10 @@ blockquote, q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
-
-}
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 
 input:-webkit-autofill {
   -webkit-box-shadow:0 0 0 0; /* можно изменить на любой вариант цвета */
