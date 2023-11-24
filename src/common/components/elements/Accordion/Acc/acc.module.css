@@ -1,0 +1,28 @@
+.accordion_item {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 24px;
+}
+
+.accordion_title {
+    display: flex;
+    gap: 15px;
+}
+.lol {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-height: 0;
+    margin-left: 32px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.accordion_content {
+}
+
+.lol_checked {
+    max-height: 150px;
+}

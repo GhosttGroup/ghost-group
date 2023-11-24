@@ -92,3 +92,22 @@ export const serviceCardArray = [
       'Our AI development specialists at Feel IT Studio turn your AI visions into reality with unmatched acumen and expertise. Rely on us for all your AI development needs.',
   },
 ];
+
+export const questions = [
+  {
+
+    question: 'How do you create such amazing products?',
+    answer:
+        'We use a secret formula that combines innovation, creativity, quality, and passion. We can’t reveal the exact ingredients, but we can assure you that they are all natural and organic.',
+  },
+  {
+    question: 'What sets your products apart?',
+    answer:
+        'Our products stand out due to their unique design, high-quality materials, and attention to detail. We believe in delivering excellence in every product we create.',
+  },
+  {
+    question: 'Do you offer international shipping?',
+    answer:
+        'Yes, we provide international shipping to ensure that customers worldwide can enjoy our exceptional products. Shipping rates may vary depending on the destination.',
+  },
+];
