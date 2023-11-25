@@ -5,6 +5,7 @@ import Hero from '../../common/components/elements/Hero';
 import OurAdvantages from '../../common/components/elements/OurAdvantages';
 import OurTeamBlock from '../../common/components/elements/OurTeamBlock/OurTeamBlock';
 import OurService from '../../common/components/elements/OurService/OurService';
+import Faq from '../../common/components/elements/Faq/Faq';
 
 import styles from './MainPage.module.css';
 
@@ -16,6 +17,7 @@ const MainPage = () => {
       <OurAdvantages />
       <OurService />
       <OurTeamBlock />
+      <Faq />
     </div>
   );
 };

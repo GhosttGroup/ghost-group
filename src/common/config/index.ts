@@ -92,3 +92,21 @@ export const serviceCardArray = [
       'Our AI development specialists at Feel IT Studio turn your AI visions into reality with unmatched acumen and expertise. Rely on us for all your AI development needs.',
   },
 ];
+export const accordionData = [
+  {
+    title: 'What languages do I need to know to join your team?',
+    content: `We use a secret formula that combines innovation, creativity, quality, and passion. We can’t reveal the exact ingredients, but we can assure you that they are all natural and organic.`,
+  },
+  {
+    title: 'What kind of work experience I need to have to join you?',
+    content: `We use a secret formula that combines innovation, creativity, quality, and passion. We can’t reveal the exact ingredients, but we can assure you that they are all natural and organic.`,
+  },
+  {
+    title: 'What fields do you work in?',
+    content: `We use a secret formula that combines innovation, creativity, quality, and passion. We can’t reveal the exact ingredients, but we can assure you that they are all natural and organic.`,
+  },
+  {
+    title: 'How do you create such amazing products?',
+    content: `We use a secret formula that combines innovation, creativity, quality, and passion. We can’t reveal the exact ingredients, but we can assure you that they are all natural and organic.`,
+  },
+];
