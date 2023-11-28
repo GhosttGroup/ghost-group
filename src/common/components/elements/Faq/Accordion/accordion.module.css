@@ -7,6 +7,7 @@
 .title {
     display: flex;
     gap: 24px;
+    cursor: pointer;
 }
 
 .icon {
