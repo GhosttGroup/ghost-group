@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.title {
+    display: flex;
+    gap: 24px;
+    cursor: pointer;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+.content {
+    margin-left: 42px;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.7s ease-in-out;
+    box-sizing: border-box;
+    color: var(--primary-gray);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-light);
+    line-height: 16px;
+
+}
+
+.content_checked {
+    max-height: 150px;
+}
+
+.title_color {
+    color: var(--primary-color);
+}
+
+.rotate {
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 420px) {
+    .content {
+        margin-left: 23px;
+    }
+    .title {
+        gap: 7px;
+    }
+}
