@@ -19,7 +19,7 @@
     margin-left: 42px;
     overflow: hidden;
     max-height: 0;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.7s ease-in-out;
     box-sizing: border-box;
     color: var(--primary-gray);
     font-size: var(--font-size-xs);
