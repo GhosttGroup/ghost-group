@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "ghost-group",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -50,6 +50,11 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^3.0.3",
     "style-loader": "^3.3.3"
   }
