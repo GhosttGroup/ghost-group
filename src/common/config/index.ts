@@ -1,6 +1,22 @@
-import { IDeveloperCardProps } from '../components/elements/OurTeamBlock/DeveloperCard/DeveloperCard';
+import { DeveloperCardType } from 'common/types/DeveloperCardType';
 
-export const companyMembers: IDeveloperCardProps[] = [
+type DefaultCardType = {
+  iconSrc: string;
+  title: string;
+  content: string;
+}
+
+type HeaderArrayType = {
+  text: string;
+  link: string;
+}
+
+type AccordionDataType = {
+  title: string;
+  content: string;
+}
+
+export const companyMembers: DeveloperCardType[] = [
   {
     jobPosition: 'Ivan Buhaienko',
     name: 'CEO',
@@ -23,7 +39,7 @@ export const companyMembers: IDeveloperCardProps[] = [
   },
 ];
 
-export const advantagesArray = [
+export const advantagesArray: DefaultCardType[] = [
   {
     iconSrc: 'assets/icon.svg',
     title: 'Excellence In Every Detail',
@@ -52,7 +68,7 @@ export const advantagesArray = [
     iconSrc: 'assets/icon.svg',
     title: 'Agility And Flexibility',
     content:
-      'we operate in a dynamic and fast-paced environment, where change is inevitable and constant. We embrace change as an opportunity to learn and grow, and to adapt our products and services to the evolving needs of our clients. ',
+      'We operate in a dynamic and fast-paced environment, where change is inevitable and constant. We embrace change as an opportunity to learn and grow, and to adapt our products and services to the evolving needs of our clients. ',
   },
   {
     iconSrc: 'assets/icon.svg',
@@ -61,12 +77,14 @@ export const advantagesArray = [
       'We use devops and cloud computing to automate, optimize, and scale our software processes for our clients.  ',
   },
 ];
-export const headerArray = [
+
+export const headerArray: HeaderArrayType[] = [
   { text: 'Our services', link: '#' },
   { text: 'Tech Stack', link: '#' },
   { text: 'About us', link: '#' },
 ];
-export const serviceCardArray = [
+
+export const serviceCardArray: DefaultCardType[] = [
   {
     iconSrc: 'assets/GroupIcon.svg',
     title: 'Development',
@@ -90,5 +108,24 @@ export const serviceCardArray = [
     title: 'DevOps',
     content:
       'Our AI development specialists at Feel IT Studio turn your AI visions into reality with unmatched acumen and expertise. Rely on us for all your AI development needs.',
+  },
+];
+
+export const accordionData: AccordionDataType[] = [
+  {
+    title: 'What languages do I need to know to join your team?',
+    content: 'We use a secret formula that combines innovation, creativity, quality, and passion. We cant reveal the exact ingredients, but we can assure you that they are all natural and organic.',
+  },
+  {
+    title: 'What kind of work experience I need to have to join you?',
+    content: 'We use a secret formula that combines innovation, creativity, quality, and passion. We can’t reveal the exact ingredients, but we can assure you that they are all natural and organic.',
+  },
+  {
+    title: 'What fields do you work in?',
+    content: 'We use a secret formula that combines innovation, creativity, quality, and passion. We can’t reveal the exact ingredients, but we can assure you that they are all natural and organic.',
+  },
+  {
+    title: 'How do you create such amazing products?',
+    content: 'We use a secret formula that combines innovation, creativity, quality, and passion. We can’t reveal the exact ingredients, but we can assure you that they are all natural and organic.',
   },
 ];

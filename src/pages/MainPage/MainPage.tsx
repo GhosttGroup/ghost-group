@@ -1,23 +1,16 @@
 import React from 'react';
 
-import Header from '../../common/components/elements/Header';
-import Hero from '../../common/components/elements/Hero';
-import OurAdvantages from '../../common/components/elements/OurAdvantages';
-import OurTeamBlock from '../../common/components/elements/OurTeamBlock/OurTeamBlock';
-import OurService from '../../common/components/elements/OurService/OurService';
+import { Faq, Header, Hero, OurAdvantages, OurService, OurTeamBlock } from 'common/components';
 
 import styles from './MainPage.module.css';
 
-const MainPage = () => {
-  return (
+export const MainPage = () => (
     <div className={styles.container}>
       <Header />
       <Hero />
       <OurAdvantages />
       <OurService />
       <OurTeamBlock />
+      <Faq />
     </div>
   );
-};
-
-export default MainPage;
