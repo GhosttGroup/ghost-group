@@ -4,17 +4,17 @@ type DefaultCardType = {
   iconSrc: string;
   title: string;
   content: string;
-}
+};
 
 type HeaderArrayType = {
   text: string;
   link: string;
-}
+};
 
 type AccordionDataType = {
   title: string;
   content: string;
-}
+};
 
 export const companyMembers: DeveloperCardType[] = [
   {
@@ -114,24 +114,28 @@ export const serviceCardArray: DefaultCardType[] = [
 export const accordionData: AccordionDataType[] = [
   {
     title: 'What languages do I need to know to join your team?',
-    content: 'We use a secret formula that combines innovation, creativity, quality, and passion. We cant reveal the exact ingredients, but we can assure you that they are all natural and organic.',
+    content:
+      'We use a secret formula that combines innovation, creativity, quality, and passion. We cant reveal the exact ingredients, but we can assure you that they are all natural and organic.',
   },
   {
     title: 'What kind of work experience I need to have to join you?',
-    content: 'We use a secret formula that combines innovation, creativity, quality, and passion. We can’t reveal the exact ingredients, but we can assure you that they are all natural and organic.',
+    content:
+      'We use a secret formula that combines innovation, creativity, quality, and passion. We can’t reveal the exact ingredients, but we can assure you that they are all natural and organic.',
   },
   {
     title: 'What fields do you work in?',
-    content: 'We use a secret formula that combines innovation, creativity, quality, and passion. We can’t reveal the exact ingredients, but we can assure you that they are all natural and organic.',
+    content:
+      'We use a secret formula that combines innovation, creativity, quality, and passion. We can’t reveal the exact ingredients, but we can assure you that they are all natural and organic.',
   },
   {
     title: 'How do you create such amazing products?',
-    content: 'We use a secret formula that combines innovation, creativity, quality, and passion. We can’t reveal the exact ingredients, but we can assure you that they are all natural and organic.',
+    content:
+      'We use a secret formula that combines innovation, creativity, quality, and passion. We can’t reveal the exact ingredients, but we can assure you that they are all natural and organic.',
   },
 ];
 export const socialNetworksArray = [
-  {icon: 'assets/iconButton.svg', link:'#'},
-  {icon: 'assets/iconButton.svg', link:'#'},
-  {icon: 'assets/iconButton.svg', link:'#'},
-  {icon: 'assets/iconButton.svg', link:'#'},
-]
+  { icon: 'assets/iconButton.svg', link: '#' },
+  { icon: 'assets/iconButton.svg', link: '#' },
+  { icon: 'assets/iconButton.svg', link: '#' },
+  { icon: 'assets/iconButton.svg', link: '#' },
+];
