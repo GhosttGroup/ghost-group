@@ -6,6 +6,7 @@ import OurAdvantages from '../../common/components/elements/OurAdvantages';
 import OurTeamBlock from '../../common/components/elements/OurTeamBlock/OurTeamBlock';
 import OurService from '../../common/components/elements/OurService/OurService';
 import Faq from '../../common/components/elements/Faq/Faq';
+import Footer from "../../common/components/elements/Footer";
 
 import styles from './MainPage.module.css';
 
@@ -18,6 +19,7 @@ const MainPage = () => {
       <OurService />
       <OurTeamBlock />
       <Faq />
+        <Footer />
     </div>
   );
 };
