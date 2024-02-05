@@ -6,7 +6,7 @@
     padding: 29px 19px 28px 19px;
     border-radius: var(--border-radius-lg);
     border: 1px solid var(--button-border-color);
-    background: rgba(0, 0, 0, 0.01);
+    background: #00000003;
     backdrop-filter: blur(12px);
 }
 
