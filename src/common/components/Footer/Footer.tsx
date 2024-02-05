@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
-import { socialNetworksArray } from '../../config';
+import { socialNetworksArray } from 'common/config';
 
 import styles from './footer.module.css';
 
