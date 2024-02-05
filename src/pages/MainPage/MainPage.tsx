@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Faq, Footer, Header, Hero, OurAdvantages, OurService, OurTeamBlock } from '../../common/components';
+import { Faq, Footer, Header, Hero, OurAdvantages, OurService, OurTeamBlock, TechSkills } from '../../common/components';
 
 import styles from './MainPage.module.css';
 
@@ -10,6 +10,7 @@ const MainPage = () => (
     <Hero />
     <OurAdvantages />
     <OurService />
+      <TechSkills />
     <OurTeamBlock />
     <Faq />
     <Footer />
