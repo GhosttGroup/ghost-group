@@ -11,4 +11,17 @@ import OurTeamBlock from './OurTeamBlock';
 import Select from './Select';
 import TechSkills from './TechSkills';
 
-export { AdvantagesCard, Button, Faq, Footer, Header, Hero, Input, OurAdvantages, OurService, OurTeamBlock, Select, TechSkills };
+export {
+  AdvantagesCard,
+  Button,
+  Faq,
+  Footer,
+  Header,
+  Hero,
+  Input,
+  OurAdvantages,
+  OurService,
+  OurTeamBlock,
+  Select,
+  TechSkills,
+};

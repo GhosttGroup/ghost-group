@@ -17,8 +17,13 @@ type AccordionDataType = {
 };
 
 type TechComponentDataType = {
-  title: string
-}
+  title: string;
+};
+
+type SocialNetworksArrayType = {
+  icon: string;
+  link: string;
+};
 
 export const companyMembers: DeveloperCardType[] = [
   {
@@ -137,7 +142,7 @@ export const accordionData: AccordionDataType[] = [
       'We use a secret formula that combines innovation, creativity, quality, and passion. We can’t reveal the exact ingredients, but we can assure you that they are all natural and organic.',
   },
 ];
-export const socialNetworksArray = [
+export const socialNetworksArray: SocialNetworksArrayType[] = [
   { icon: 'assets/iconButton.svg', link: '#' },
   { icon: 'assets/iconButton.svg', link: '#' },
   { icon: 'assets/iconButton.svg', link: '#' },

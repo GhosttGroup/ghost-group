@@ -9,9 +9,9 @@ interface IAdvantagesCardProps {
 }
 
 export const AdvantagesCard = ({ iconSrc, title, content }: IAdvantagesCardProps) => (
-    <div className={styles.text_card}>
-      <img src={iconSrc} alt='icon' />
-      <h3 className={styles.text_card_title}>{title}</h3>
-      <p className={styles.text_card_content}>{content}</p>
-    </div>
-  );
+  <div className={styles.text_card}>
+    <img src={iconSrc} alt='icon' />
+    <h3 className={styles.text_card_title}>{title}</h3>
+    <p className={styles.text_card_content}>{content}</p>
+  </div>
+);
