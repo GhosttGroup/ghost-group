@@ -16,6 +16,15 @@ type AccordionDataType = {
   content: string;
 };
 
+type TechComponentDataType = {
+  title: string;
+};
+
+type SocialNetworksArrayType = {
+  icon: string;
+  link: string;
+};
+
 export const companyMembers: DeveloperCardType[] = [
   {
     jobPosition: 'Ivan Buhaienko',
@@ -132,4 +141,25 @@ export const accordionData: AccordionDataType[] = [
     content:
       'We use a secret formula that combines innovation, creativity, quality, and passion. We can’t reveal the exact ingredients, but we can assure you that they are all natural and organic.',
   },
+];
+export const socialNetworksArray: SocialNetworksArrayType[] = [
+  { icon: 'assets/iconButton.svg', link: '#' },
+  { icon: 'assets/iconButton.svg', link: '#' },
+  { icon: 'assets/iconButton.svg', link: '#' },
+  { icon: 'assets/iconButton.svg', link: '#' },
+];
+export const techComponentArray: TechComponentDataType[] = [
+  { title: 'React Native' },
+  { title: 'Sass' },
+  { title: 'Javascript' },
+  { title: 'Typescript' },
+  { title: 'Next.js' },
+  { title: 'Webpack' },
+  { title: 'Appolo' },
+  { title: 'Java' },
+  { title: 'Node.js' },
+  { title: 'Express.js' },
+  { title: 'GraphQL' },
+  { title: 'Python' },
+  { title: 'FastAPI' },
 ];
