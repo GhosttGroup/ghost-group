@@ -5,12 +5,12 @@ import { Faq, Header, Hero, OurAdvantages, OurService, OurTeamBlock } from 'comm
 import styles from './MainPage.module.css';
 
 export const MainPage = () => (
-    <div className={styles.container}>
-      <Header />
-      <Hero />
-      <OurAdvantages />
-      <OurService />
-      <OurTeamBlock />
-      <Faq />
-    </div>
-  );
+  <div className={styles.container}>
+    <Header />
+    <Hero />
+    <OurAdvantages />
+    <OurService />
+    <OurTeamBlock />
+    <Faq />
+  </div>
+);
