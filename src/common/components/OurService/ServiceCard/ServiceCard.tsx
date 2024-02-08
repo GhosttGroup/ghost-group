@@ -9,9 +9,9 @@ interface IServiceCardProps {
 }
 
 export const ServiceCard = ({ iconSrc, title, content }: IServiceCardProps) => (
-    <div className={styles.container}>
-      <img className={styles.image} src={iconSrc} alt='computer' />
-      <h2 className={styles.title}>{title}</h2>
-      <p className={styles.content}>{content}</p>
-    </div>
-  );
+  <div className={styles.container}>
+    <img className={styles.image} src={iconSrc} alt='computer' />
+    <h2 className={styles.title}>{title}</h2>
+    <p className={styles.content}>{content}</p>
+  </div>
+);

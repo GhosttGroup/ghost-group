@@ -7,13 +7,13 @@ interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 export const Input = (props: IInputProps): ReactElement => (
-    <div className={style.container__input}>
-      {props.label && (
-        <label>
-          {props.label}
-          {props.required && '*'}
-        </label>
-      )}
-      <input className={style.custom__input} {...props} />
-    </div>
-  );
+  <div className={style.container__input}>
+    {props.label && (
+      <label>
+        {props.label}
+        {props.required && '*'}
+      </label>
+    )}
+    <input className={style.custom__input} {...props} />
+  </div>
+);
