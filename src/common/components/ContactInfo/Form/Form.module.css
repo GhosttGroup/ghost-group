@@ -1,0 +1,5 @@
+.container_inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Создаем три столбца равной ширины */
+    grid-gap: 10px; /* Пространство между ячейками */
+}

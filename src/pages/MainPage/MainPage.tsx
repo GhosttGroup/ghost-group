@@ -9,6 +9,7 @@ import {
   OurService,
   OurTeamBlock,
   TechSkills,
+  ContactInfo,
 } from '../../common/components';
 
 import styles from './MainPage.module.css';
@@ -22,6 +23,7 @@ const MainPage = () => (
     <TechSkills />
     <OurTeamBlock />
     <Faq />
+    <ContactInfo />
     <Footer />
   </div>
 );

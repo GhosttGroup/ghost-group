@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    gap: 22px;
+}
+
+.container_wrapper {
+    height: 600px;
+    width: 466px;
+    background-image: url('/public/assets/Frame8.png'); /* Изображение в качестве фона */
+    background-repeat: no-repeat; /* Запрет на повторение фонового изображения */
+}
+
+.container_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 13%;
+    font-size: 21px;
+}
+
+.container_title_text {
+    font-size: 15px;
+    font-weight: 300;
+    color: #FFF;
+}
+
+.container_list {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    padding-top: 40%;
+    padding-left: 12%;
+}
