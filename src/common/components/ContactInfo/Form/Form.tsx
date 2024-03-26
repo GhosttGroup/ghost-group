@@ -9,16 +9,93 @@ import { OptionsArray } from '../../../config';
 
 import styles from './Form.module.css';
 
-export const Form = () => (
+type FormData = {
+  fullName?: string;
+  email?: string;
+  phoneNumber?: string;
+  companyName?: string;
+  services?: string;
+  additionalInfo?: string;
+  nda?: boolean;
+};
 
-    <form className={styles.container}>
+export const Form = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormData>({
+    mode: 'onBlur',
+  });
+  const onSubmit: SubmitHandler<FormData> = data => {
+    console.log(data);
+  };
+  return (
+    <form className={styles.container} onSubmit={handleSubmit(onSubmit)}>
       <div className={styles.container_inputs}>
-      <Input label={'Full Name'} required={true} placeholder={'Enter your name'} />
-      <Input label={'Email'} required={true} placeholder={'Enter your email'}/>
-      <Input label={'Phone number'} placeholder={'Enter your phone'}/>
-      <Input label={'Company name'} placeholder={'Enter your company'}/>
+        <div className={styles.inputs_main}>
+          <div className={styles.input_wrapper}>
+            <Input
+              label={'Full Name'}
+              placeholder={'Enter your name'}
+              name={'fullName'}
+              register={register}
+              rules={{ required: 'Field is required', maxLength: { value: 100, message: 'maximum of 100 characters' } }}
+              errors={errors}
+            />
+          </div>
+          <div className={styles.input_wrapper}>
+            <Input
+              label={'Phone number'}
+              placeholder={'Enter your phone'}
+              name={'phoneNumber'}
+              register={register}
+              rules={{ required: 'Field is required', maxLength: { value: 20, message: 'maximum of 20 characters' } }}
+              errors={errors}
+            />
+          </div>
+          <div className={styles.input_wrapper}>
+            <Input
+              label={'Email'}
+              placeholder={'Enter your email'}
+              name={'email'}
+              register={register}
+              rules={{ required: 'Field is required', maxLength: { value: 254, message: 'maximum of 254 characters' } }}
+              errors={errors}
+            />
+          </div>
+          <div className={styles.input_wrapper}>
+            <Input
+              label={'Company name'}
+              placeholder={'Enter your company'}
+              name={'companyName'}
+              register={register}
+              errors={errors}
+            />
+          </div>
+          <div className={styles.input_wrapper}>
+            <Select
+              options={OptionsArray}
+              label={'Services'}
+              defaultText={'Select a service'}
+              register={register}
+              name={'service'}
+              rules={{ required: 'Field is required' }}
+              errors={errors}
+            />
+          </div>
+        </div>
+        <Input label={'Tell us more'} name={'moreInfo'} register={register} />
       </div>
-      <Select options={OptionsArray}/>
+      <div className={styles.container_controls}>
+        <CheckBox register={register} name={'NDA'} label={'Do you need a NDA?'} />
+        <div className={styles.controls_buttons}>
+          <Button size={'xm'}>{'Upload CV'}</Button>
+          <Button buttonType={'secondary'} size={'xs'} type='submit'>
+            {'Send Message'}
+          </Button>
+        </div>
+      </div>
     </form>
-
   );
+};

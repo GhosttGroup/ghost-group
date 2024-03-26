@@ -1,13 +1,15 @@
 .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 22px;
 }
 
 .container_wrapper {
     height: 600px;
     width: 466px;
-    background-image: url('/public/assets/Frame8.png'); /* Изображение в качестве фона */
-    background-repeat: no-repeat; /* Запрет на повторение фонового изображения */
+    background-image: url('/public/assets/Frame8.png');
+    background-repeat: no-repeat;
 }
 
 .container_title {

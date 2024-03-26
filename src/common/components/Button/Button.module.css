@@ -8,3 +8,14 @@
 .custom_button:hover {
     box-shadow: 1px 2px 16px var(--button-box-shadow-color) inset;
 }
+
+.secondary {
+    border: 1px solid var(--secondary-gray);
+    border-radius: 6px;
+    background: none;
+    color: var(--primary-white);
+}
+
+.secondary:hover {
+    box-shadow: 1px 1px 7px white inset;
+}

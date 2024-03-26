@@ -1,5 +1,17 @@
-.container_inputs {
+.inputs_main {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Создаем три столбца равной ширины */
-    grid-gap: 10px; /* Пространство между ячейками */
+    grid-gap: 30px;
+    max-width: 682px;
+}
+
+.container_controls {
+    display: flex;
+    gap: 70px;
+    padding: 10px;
+}
+
+.controls_buttons {
+    display: flex;
+    gap: 20px;
 }

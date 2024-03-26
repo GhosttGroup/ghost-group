@@ -27,15 +27,15 @@ type SocialNetworksArrayType = {
 
 type ContactsArrayType = {
   iconSrc: string;
-  altInfo: string
+  altInfo: string;
   info: string;
   link: string;
-}
+};
 
 type OptionsArrayType = {
   value: string;
   label: string;
-}
+};
 
 export const companyMembers: DeveloperCardType[] = [
   {
@@ -175,13 +175,13 @@ export const techComponentArray: TechComponentDataType[] = [
   { title: 'Python' },
   { title: 'FastAPI' },
 ];
-export const ContactsArray: ContactsArrayType [] = [
+export const ContactsArray: ContactsArrayType[] = [
   { iconSrc: 'assets/message.svg', altInfo: 'message', info: 'mailbox@feelit.studio', link: '#' },
   { iconSrc: 'assets/telephone.svg', altInfo: 'telephone', info: '+380 66 666 66 66', link: '#' },
   { iconSrc: 'assets/map.svg', altInfo: 'map', info: 'Lorem imps-um', link: '#' },
 ];
 
-export const OptionsArray: OptionsArrayType [] = [
+export const OptionsArray: OptionsArrayType[] = [
   { value: 'Development', label: 'Development' },
   { value: 'Web Hosting', label: 'Web Hosting' },
   { value: 'Software Development', label: 'Software Development' },

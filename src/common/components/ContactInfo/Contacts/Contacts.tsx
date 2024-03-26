@@ -10,10 +10,11 @@ interface IContactsProps {
   info: string;
   link: string;
 }
-export const Contacts = (props:IContactsProps) => (
+export const Contacts = (props: IContactsProps) => (
   <div className={styles.container}>
-    <img className={styles.container_img} src={props.iconSrc} alt={props.altInfo}/>
-    <li className={styles.container_info}><Link to={props.link}>{props.info}</Link></li>
+    <img className={styles.container_img} src={props.iconSrc} alt={props.altInfo} />
+    <li className={styles.container_info}>
+      <Link to={props.link}>{props.info}</Link>
+    </li>
   </div>
-  );
-
+);
