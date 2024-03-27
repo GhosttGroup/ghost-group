@@ -88,11 +88,11 @@ export const Form = () => {
         <Input label={'Tell us more'} name={'moreInfo'} register={register} />
       </div>
       <div className={styles.container_controls}>
-        <CheckBox register={register} name={'NDA'} label={'Do you need a NDA?'} />
+        <CheckBox register={register} name='NDA' label='Do you need a NDA?' />
         <div className={styles.controls_buttons}>
-          <Button size={'xm'}>{'Upload CV'}</Button>
-          <Button buttonType={'secondary'} size={'xs'} type='submit'>
-            {'Send Message'}
+          <Button size='xm'>Upload CV</Button>
+          <Button buttonType='secondary' size='xs' type='submit'>
+            Send Message
           </Button>
         </div>
       </div>
