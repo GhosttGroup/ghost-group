@@ -6,7 +6,7 @@ import { techComponentArray } from 'common/config';
 import styles from './TechSkills.module.css';
 
 export const TechSkills = () => (
-  <div className={styles.container}>
+  <div id='TechSkills' className={styles.container}>
     <h2 className={styles.title}>Tech Stack</h2>
     <p className={styles.description}>
       Feel IT`s tech stack includes Node.js, Angular, React Native, Vue.js, and JavaScript.

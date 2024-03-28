@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container_wrapper {
+    display: flex;
+    gap: 50px;
+    width: 80%;
+}
+
+.contact_info{
+    height: 600px;
+    min-width: 50%;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+.contact_info_wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    background: no-repeat cover url('/public/assets/Frame8.png') no-repeat;
+}
+
+.contact_info_title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact_info_texts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact_info_img {
+    height: 60px;
+    width: 40px;
+}
+
+.contact_info_main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 60px;
+    font-size: var(--font-size-ml);
+}
+
+.contact_info_text {
+    font-size: var(--font-size-sm);
+    font-weight: 300;
+    color: var(--color-primary-white);
+}
+
+.contact_info_list {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    padding-top: 100px;
+    padding-left: 10px;
+}
+
+@media (max-width: 1024px) {
+    .container_wrapper {
+        flex-direction: column;
+    }
+
+}
