@@ -53,7 +53,7 @@
 .contact_info_text {
     font-size: var(--font-size-sm);
     font-weight: 300;
-    color: #FFF;
+    color: var(--color-primary-white);
 }
 
 .contact_info_list {
