@@ -8,7 +8,7 @@ import 'swiper/css';
 import './OurTeamBlock.css';
 
 export const OurTeamBlock = () => (
-  <div id='OurTeamBlock' className='our-team-container'>
+  <div className='our-team-container'>
     <h2 className='title'>Our Team</h2>
     <Swiper
       spaceBetween={16}

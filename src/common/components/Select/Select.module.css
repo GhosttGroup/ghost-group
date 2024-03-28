@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 4px;
     width: 100%;
-    padding: 10px;
+    padding-bottom: var(--spacing-md);
 }
 
 .custom__label {
@@ -40,22 +40,4 @@
 .custom__select:focus {
     border-color: var(--primary-color);
     outline: none;
-}
-
-.errors {
-    color: var(--primary-red);
-    background-color: var(--primary-white);
-    border: 1px solid var(--primary-border-red);
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    animation: shake 0.3s ease-in-out;
-}
-
-@keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-    75% { transform: translateX(-3px); }
-    100% { transform: translateX(3px); }
 }

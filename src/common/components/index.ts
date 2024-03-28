@@ -1,7 +1,6 @@
 import AdvantagesCard from './AdvantagesCard';
 import Button from './Button';
 import CheckBox from './CheckBox';
-import ContactInfo from './ContactInfo';
 import Faq from './Faq';
 import Footer from './Footer';
 import Header from './Header';
@@ -17,7 +16,6 @@ export {
   AdvantagesCard,
   Button,
   CheckBox,
-  ContactInfo,
   Faq,
   Footer,
   Header,
