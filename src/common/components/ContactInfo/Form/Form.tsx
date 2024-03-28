@@ -27,6 +27,7 @@ export const Form = () => {
   } = useForm<FormData>({
     mode: 'onBlur',
   });
+
   const onSubmit: SubmitHandler<FormData> = data => {
     console.log(data);
   };
@@ -96,7 +97,7 @@ export const Form = () => {
           <CheckBox register={register} name='NDA' label='Do you need a NDA?' />
           <div className={styles.controls_buttons}>
             <Button size='xm'>Upload CV</Button>
-            <Button buttonType='secondary' size='xs' type='submit'>
+            <Button buttonType='secondary' size='xm' type='submit'>
               Send Message
             </Button>
           </div>

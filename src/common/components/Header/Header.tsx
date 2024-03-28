@@ -7,7 +7,6 @@ import { headerArray } from 'common/config';
 
 import styles from './Header.module.css';
 
-//TODO set anchors
 export const Header = () => (
   <header className={styles.header}>
     <div className={styles.container}>

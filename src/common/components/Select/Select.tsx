@@ -25,7 +25,7 @@ export const Select = ({ register, errors, name, rules, defaultText, options, la
     {label && <label className={style.custom__label}>{label + '*'}</label>}
 
     <select className={style.custom__select} {...register(name, rules)} {...props}>
-      <option value='' disabled hidden selected>
+      <option value='' hidden>
         {defaultText}
       </option>
       {options.map(option => (

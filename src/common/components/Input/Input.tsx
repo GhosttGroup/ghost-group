@@ -17,7 +17,7 @@ export const Input = ({ register, name, errors, rules, label, ...props }: IInput
     {label && (
       <label>
         {label}
-        {props.required && '*'}
+        {rules?.required && '*'}
       </label>
     )}
     <input className={styles.custom__input} {...(register && register(name, rules))} {...props} />

@@ -3,7 +3,7 @@
     gap: 25px;
 }
 
-.container_info a {
+.container_link {
     text-decoration: none;
     color: var(--primary-white);
 }

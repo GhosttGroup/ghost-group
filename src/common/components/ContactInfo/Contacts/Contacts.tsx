@@ -13,8 +13,8 @@ interface IContactsProps {
 export const Contacts = (props: IContactsProps) => (
   <div className={styles.container}>
     <img className={styles.container_img} src={props.iconSrc} alt={props.altInfo} />
-    <li className={styles.container_info}>
-      <Link to={props.link}>{props.info}</Link>
-    </li>
+    <Link className={styles.container_link} to={props.link}>
+      {props.info}
+    </Link>
   </div>
 );

@@ -174,7 +174,7 @@ export const techComponentArray: TechComponentDataType[] = [
   { title: 'Python' },
   { title: 'FastAPI' },
 ];
-export const ContactsArray: ContactsArrayType[] = [
+export const contactsArray: ContactsArrayType[] = [
   { iconSrc: 'assets/message.svg', altInfo: 'message', info: 'mailbox@feelit.studio', link: '#' },
   { iconSrc: 'assets/telephone.svg', altInfo: 'telephone', info: '+380 66 666 66 66', link: '#' },
   { iconSrc: 'assets/map.svg', altInfo: 'map', info: 'Lorem imps-um', link: '#' },
