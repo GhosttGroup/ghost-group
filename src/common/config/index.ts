@@ -98,11 +98,10 @@ export const advantagesArray: DefaultCardType[] = [
       'We use devops and cloud computing to automate, optimize, and scale our software processes for our clients.  ',
   },
 ];
-
 export const headerArray: HeaderArrayType[] = [
-  { text: 'Our services', link: '#' },
-  { text: 'Tech Stack', link: '#' },
-  { text: 'About us', link: '#' },
+  { text: 'Our services', link: 'OurService' },
+  { text: 'Tech Stack', link: 'TechSkills' },
+  { text: 'About us', link: 'OurTeamBlock' },
 ];
 
 export const serviceCardArray: DefaultCardType[] = [

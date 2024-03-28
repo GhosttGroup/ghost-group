@@ -40,7 +40,10 @@ export const Form = () => {
               placeholder={'Enter your name'}
               name={'fullName'}
               register={register}
-              rules={{ required: 'Field is required', maxLength: { value: 100, message: 'maximum of 100 characters' } }}
+              rules={{
+                required: 'Field is required',
+                maxLength: { value: 100, message: 'maximum of 100 characters' },
+              }}
               errors={errors}
             />
           </div>
@@ -60,7 +63,10 @@ export const Form = () => {
               placeholder={'Enter your email'}
               name={'email'}
               register={register}
-              rules={{ required: 'Field is required', maxLength: { value: 254, message: 'maximum of 254 characters' } }}
+              rules={{
+                required: 'Field is required',
+                maxLength: { value: 254, message: 'maximum of 254 characters' },
+              }}
               errors={errors}
             />
           </div>
@@ -86,14 +92,14 @@ export const Form = () => {
           </div>
         </div>
         <Input label={'Tell us more'} name={'moreInfo'} register={register} />
-      </div>
-      <div className={styles.container_controls}>
-        <CheckBox register={register} name='NDA' label='Do you need a NDA?' />
-        <div className={styles.controls_buttons}>
-          <Button size='xm'>Upload CV</Button>
-          <Button buttonType='secondary' size='xs' type='submit'>
-            Send Message
-          </Button>
+        <div className={styles.container_controls}>
+          <CheckBox register={register} name='NDA' label='Do you need a NDA?' />
+          <div className={styles.controls_buttons}>
+            <Button size='xm'>Upload CV</Button>
+            <Button buttonType='secondary' size='xs' type='submit'>
+              Send Message
+            </Button>
+          </div>
         </div>
       </div>
     </form>

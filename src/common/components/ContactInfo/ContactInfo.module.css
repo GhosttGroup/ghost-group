@@ -1,12 +1,17 @@
 .container {
     display: flex;
     justify-content: center;
-    gap: 22px;
+}
+
+.container_wrapper {
+    display: flex;
+    gap: 50px;
+    width: 80%;
 }
 
 .contact_info{
     height: 600px;
-    width: 35%;
+    min-width: 50%;
     border: 1px solid var(--primary-color);
     border-radius: 8px;
 }
@@ -58,4 +63,11 @@
     gap: 46px;
     padding-top: 100px;
     padding-left: 10px;
+}
+
+@media (max-width: 1024px) {
+    .container_wrapper {
+        flex-direction: column;
+    }
+
 }

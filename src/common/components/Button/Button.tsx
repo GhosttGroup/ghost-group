@@ -4,7 +4,7 @@ import styles from './Button.module.css';
 
 interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
-  size?: 'xs' | 'xm';
+  size?: 'xs' | 'xm' | 'md';
   customClassName?: string;
   buttonType?: 'primary' | 'secondary';
 }
@@ -16,7 +16,7 @@ export const Button = (props: IButtonProps): ReactElement => {
       className={`${styles.custom_button} ${styles[`${buttonType}`]}`}
       {...props}
       style={{
-        padding: size === 'xs' ? '8px 32px' : '16px 48px',
+        padding: size === 'xs' ? '8px 32px' : size === 'md' ? '12px 40px' : '16px 48px',
       }}
     >
       {children}
