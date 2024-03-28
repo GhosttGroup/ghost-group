@@ -22,8 +22,7 @@
     height: 100%;
     width: 100%;
     border-radius: 6px;
-    background: url('/public/assets/Frame8.png') no-repeat;
-    background-size: cover;
+    background: no-repeat cover url('/public/assets/Frame8.png') no-repeat;
 }
 
 .contact_info_title {
