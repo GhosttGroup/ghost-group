@@ -8,13 +8,14 @@ import CheckBox from '../../CheckBox';
 import { OptionsArray } from '../../../config';
 
 import styles from './Form.module.css';
+import { sendData } from '../../../../api';
 
-type FormData = {
-  fullName?: string;
-  email?: string;
+export type FormData = {
+  fullName: string;
+  email: string;
   phoneNumber?: string;
   companyName?: string;
-  services?: string;
+  services: string;
   additionalInfo?: string;
   nda?: boolean;
 };
@@ -28,8 +29,9 @@ export const Form = () => {
     mode: 'onBlur',
   });
 
-  const onSubmit: SubmitHandler<FormData> = data => {
-    console.log(data);
+  const onSubmit: SubmitHandler<FormData> = async data => {
+    const res = await sendData(data, '');
+    console.log(res);
   };
   return (
     <form className={styles.container} onSubmit={handleSubmit(onSubmit)}>
@@ -54,7 +56,7 @@ export const Form = () => {
               placeholder={'Enter your phone'}
               name={'phoneNumber'}
               register={register}
-              rules={{ required: 'Field is required', maxLength: { value: 20, message: 'maximum of 20 characters' } }}
+              rules={{ maxLength: { value: 20, message: 'maximum of 20 characters' } }}
               errors={errors}
             />
           </div>
