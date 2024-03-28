@@ -1,17 +1,22 @@
 import React, { ReactNode, ButtonHTMLAttributes, ReactElement } from 'react';
 
-import style from './Button.module.css';
+import styles from './Button.module.css';
 
-interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface IButtonProps extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'buttonType'> {
   children: ReactNode;
-  size?: 'xs' | 'xm';
+  size?: 'xs' | 'xm' | 'md';
+  customClassName?: string;
+  buttonType?: 'primary' | 'secondary';
 }
 
-export const Button = (props: IButtonProps): ReactElement => {
-  const { children, size = 'xs' } = props;
-  return (
-    <button className={style.custom_button} {...props} style={{ padding: size === 'xs' ? '8px 32px' : '16px 48px' }}>
-      {children}
-    </button>
-  );
-};
+export const Button = ({ buttonType, children, size = 'xs', ...rest }: IButtonProps): ReactElement => (
+  <button
+    className={`${styles.custom_button} ${buttonType ? styles[`${buttonType}`] : ''}`}
+    style={{
+      padding: size === 'xs' ? '8px 32px' : size === 'md' ? '12px 30px' : '14px 18px',
+    }}
+    {...rest}
+  >
+    {children}
+  </button>
+);

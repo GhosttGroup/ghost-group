@@ -17,6 +17,10 @@ footer, header, nav, section, main {
   display: block;
 }
 
+a {
+  cursor: pointer;
+}
+
 body {
   line-height: 1;
   padding: 0 5%;

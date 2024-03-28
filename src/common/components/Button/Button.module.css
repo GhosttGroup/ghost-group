@@ -1,10 +1,24 @@
 .custom_button {
+    width: 100%;
+    font-style: 14px;
     border: 1px solid var(--button-border-color);
+    border-radius: 6px;
+    background: none;
+    color: var(--primary-white);
+    text-wrap: nowrap;
+}
+
+.custom_button:hover {
+    box-shadow: 1px 2px 16px var(--button-box-shadow-color) inset;
+}
+
+.secondary {
+    border: 1px solid var(--secondary-gray);
     border-radius: 6px;
     background: none;
     color: var(--primary-white);
 }
 
-.custom_button:hover {
-    box-shadow: 1px 2px 16px var(--button-box-shadow-color) inset;
+.secondary:hover {
+    box-shadow: 1px 1px 7px white inset;
 }

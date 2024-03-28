@@ -25,11 +25,15 @@
 .container_item {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 40px;
     margin-top: 24px;
 }
 
 @media(max-width: 1024px) {
+    .container {
+        gap: 35px;
+    }
     .container_item {
         gap: 16px;
     }

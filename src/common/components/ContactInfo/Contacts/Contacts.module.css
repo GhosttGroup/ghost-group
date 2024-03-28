@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    gap: 25px;
+}
+
+.container_link {
+    text-decoration: none;
+    color: var(--primary-white);
+}
+

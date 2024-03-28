@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link as ScrollLink } from 'react-scroll';
+
 import Button from '../Button';
 
 import styles from './Hero.module.css';
@@ -14,7 +16,9 @@ export const Hero = () => (
           achieve your goals. Our innovative solutions and state-of-the-art technologies ensure that you receive the
           best possible service.
         </p>
-        <Button size='xs'>Contact us</Button>
+        <ScrollLink to='ContactInfo' spy={true} smooth={true} offset={-40}>
+          <Button size='xs'>Contact us</Button>
+        </ScrollLink>
       </div>
     </div>
     <img className={styles.image} src='/assets/Group5.svg' alt='Group' />
