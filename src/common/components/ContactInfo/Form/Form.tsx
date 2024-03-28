@@ -37,7 +37,7 @@ export const Form = () => {
         <div className={styles.inputs_main}>
           <div className={styles.input_wrapper}>
             <Input
-              label={'Full Name'}
+              label='Full Name'
               placeholder={'Enter your name'}
               name={'fullName'}
               register={register}
