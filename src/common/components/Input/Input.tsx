@@ -1,26 +1,19 @@
 import React, { InputHTMLAttributes, ReactElement, ReactNode } from 'react';
 
-import { UseFormRegister, FieldValues, RegisterOptions, Path, DeepMap, FieldError } from 'react-hook-form';
-
-import styles from './Input.module.css';
+import style from './Input.module.css';
 
 interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: ReactNode;
-  name: Path<FieldValues>;
-  rules?: RegisterOptions;
-  register?: UseFormRegister<FieldValues>;
-  errors?: DeepMap<FieldValues, FieldError>;
 }
 
-export const Input = ({ register, name, errors, rules, label, ...props }: IInputProps): ReactElement => (
-  <div className={styles.container__input}>
-    {label && (
+export const Input = (props: IInputProps): ReactElement => (
+  <div className={style.container__input}>
+    {props.label && (
       <label>
-        {label}
+        {props.label}
         {props.required && '*'}
       </label>
     )}
-    <input className={styles.custom__input} {...(register && register(name, rules))} {...props} />
-    {errors?.[name] && <p className={styles.errors}>{errors?.[name].message || 'Error'}</p>}
+    <input className={style.custom__input} {...props} />
   </div>
 );

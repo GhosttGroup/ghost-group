@@ -6,10 +6,9 @@ import ServiceCard from './ServiceCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import styles from './OurService.module.css';
-import { Link as ScrollLink } from 'react-scroll/modules';
 
 export const OurService = () => (
-  <div id='OurService' className={styles.container}>
+  <div className={styles.container}>
     <div className={styles.info}>
       <h2 className={styles.title}>Our Service</h2>
       <p className={styles.content}>
@@ -18,9 +17,7 @@ export const OurService = () => (
         on your core business objectives. Whether you need a mobile developer or a Machine Learning engineer,
         we&#8217;re aligned with your needs.
       </p>
-      <ScrollLink to='ContactInfo' spy={true} smooth={true} offset={-40}>
-        <Button size='xs'>Contact us</Button>
-      </ScrollLink>
+      <Button size='xs'>Contact us</Button>
     </div>
     <div className={styles.container_swiper}>
       <Swiper
