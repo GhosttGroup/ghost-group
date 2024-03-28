@@ -15,7 +15,7 @@ export type FormData = {
   email: string;
   phoneNumber?: string;
   companyName?: string;
-  services: string;
+  service: string;
   additionalInfo?: string;
   nda?: boolean;
 };

@@ -6,7 +6,7 @@ import { FieldValues, Path, UseFormRegister } from 'react-hook-form';
 interface ICheckboxProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string;
   name: Path<FieldValues>;
-  register: UseFormRegister<FieldValues>;
+  register: UseFormRegister<any>;
 }
 
 export const CheckBox = ({ register, name, ...props }: ICheckboxProps) => (
