@@ -14,7 +14,7 @@ interface ISelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
   options: OptionType[];
   label?: string;
   defaultText?: string;
-  register: UseFormRegister<FieldValues>;
+  register: UseFormRegister<any>;
   name: Path<FieldValues>;
   rules?: RegisterOptions;
   errors?: DeepMap<FieldValues, FieldError>;

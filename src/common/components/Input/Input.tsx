@@ -3,12 +3,13 @@ import React, { InputHTMLAttributes, ReactElement, ReactNode } from 'react';
 import { UseFormRegister, FieldValues, RegisterOptions, Path, DeepMap, FieldError } from 'react-hook-form';
 
 import styles from './Input.module.css';
+import { FormData } from '../ContactInfo/Form/Form';
 
 interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: ReactNode;
   name: Path<FieldValues>;
   rules?: RegisterOptions;
-  register?: UseFormRegister<FieldValues>;
+  register?: UseFormRegister<any>;
   errors?: DeepMap<FieldValues, FieldError>;
 }
 
