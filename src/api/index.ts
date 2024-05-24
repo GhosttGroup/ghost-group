@@ -1,15 +1,35 @@
-import { axiosInstance } from '../common/utils/axios'; 
+import {axiosInstance} from '../common/utils/axios';
+import {FormData as FormDataType} from 'common/components/ContactInfo/Form/Form';
 
-import { FormData } from 'common/components/ContactInfo/Form/Form';
+export const sendData = async (formData: FormDataType) => {
+    const data = new FormData();
+    data.append('full_name', formData.fullName);
+    data.append('emailAddress', formData.email);
+    data.append('services', formData.service);
 
-export const sendData = async (formData: FormData, cvFile: string) => {
-  const response = await axiosInstance.post(
-    `upload_and_send?full_name=${formData.fullName}&emailAddress=${formData.email}&services=${formData.service}${
-      formData.phoneNumber ? '&phone_number=' + formData.phoneNumber : ''
-    }${formData.companyName ? '&company_name=' + formData.companyName : ''}${
-      formData.additionalInfo ? '&message=' + formData.additionalInfo : ''
-    }`,
-    cvFile
-  );
-  return response.data;
+    if (formData.phoneNumber) {
+        data.append('phone_number', formData.phoneNumber);
+    }
+
+    if (formData.companyName) {
+        data.append('company_name', formData.companyName);
+    }
+
+    if (formData.additionalInfo) {
+        data.append('message', formData.additionalInfo);
+    } else {
+        console.warn('No additional info provided');
+    }
+
+    try {
+        const response = await axiosInstance.post('upload_and_send', data, {
+            headers: {
+                'Content-Type': 'multipart/form-data',
+            },
+        });
+        return response.data;
+    } catch (error) {
+        console.error('Error sending data:', error);
+        throw error;
+    }
 };

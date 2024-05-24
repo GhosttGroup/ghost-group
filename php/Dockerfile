@@ -1,5 +1,5 @@
 # Use the official PHP image as the base image
-FROM php:8.1-cli
+FROM php:8.1
 
 # Install necessary PHP extensions
 RUN apt-get update && apt-get install -y \
@@ -24,8 +24,8 @@ RUN composer require phpmailer/phpmailer
 # Set permissions for the uploads directory
 RUN mkdir -p uploads && chmod -R 777 uploads
 
-# Expose port 8000
-EXPOSE 8000
+# Expose port 9000 for the built-in PHP web server
+EXPOSE 9000
 
-# Start PHP built-in server
-CMD ["php", "-S", "0.0.0.0:8000", "-t", "/var/www/html"]
+# Start the built-in PHP web server on port 9000
+CMD ["php", "-S", "0.0.0.0:9000", "-t", "/var/www/html"]
