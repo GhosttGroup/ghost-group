@@ -21,7 +21,6 @@ const MainPage = () => (
     <OurAdvantages />
     <OurService />
     <TechSkills />
-    <OurTeamBlock />
     <ContactInfo />
     <Faq />
     <Footer />
