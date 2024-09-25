@@ -87,15 +87,15 @@ export const advantagesArray: DefaultCardType[] = [
   },
   {
     iconSrc: 'assets/GroupIcon.svg',
-    title: 'Software Development',
+    title: 'AI integration',
     content:
-      'Our AI development specialists at Feel IT Studio turn your AI visions into reality with unmatched acumen and expertise. Rely on us for all your AI development needs.',
+      'We integrate AI into all the services we create for our clients in order to maximize the work with services and automate many processes',
   },
   {
     iconSrc: 'assets/GroupIcon.svg',
-    title: 'DevOps',
+    title: 'Process Automation',
     content:
-      'Our AI development specialists at Feel IT Studio turn your AI visions into reality with unmatched acumen and expertise. Rely on us for all your AI development needs.',
+      'With our services you will be able to maximize the automation of processes in your company, it will add much more time and save you money',
   },
 ];
 
@@ -134,24 +134,19 @@ export const serviceCardArray: DefaultCardType[] = [
 
 export const accordionData: AccordionDataType[] = [
   {
-    title: 'What languages do I need to know to join your team?',
+    title: 'What services do you provide?',
     content:
-      'We use a secret formula that combines innovation, creativity, quality, and passion. We cant reveal the exact ingredients, but we can assure you that they are all natural and organic.',
+      'We develop many different services for companies, our main exclusivity is that all services are created individually for the client, so they will fit you perfectly',
   },
   {
-    title: 'What kind of work experience I need to have to join you?',
+    title: 'How much do your services cost?',
     content:
-      'We use a secret formula that combines innovation, creativity, quality, and passion. We can’t reveal the exact ingredients, but we can assure you that they are all natural and organic.',
+      'There is no specific price for our services, as we develop everything individually for each client. Contact us via the form or social networks to estimate your order',
   },
   {
     title: 'What fields do you work in?',
     content:
-      'We use a secret formula that combines innovation, creativity, quality, and passion. We can’t reveal the exact ingredients, but we can assure you that they are all natural and organic.',
-  },
-  {
-    title: 'How do you create such amazing products?',
-    content:
-      'We use a secret formula that combines innovation, creativity, quality, and passion. We can’t reveal the exact ingredients, but we can assure you that they are all natural and organic.',
+      'We specialize in software development, cloud computing, and DevOps. Our expertise also spans AI-driven solutions, automation, and digital transformation strategies to help businesses thrive in todays tech landscape.',
   },
 ];
 export const socialNetworksArray: SocialNetworksArrayType[] = [
@@ -163,18 +158,20 @@ export const socialNetworksArray: SocialNetworksArrayType[] = [
 export const techComponentArray: TechComponentDataType[] = [
   { title: 'React Native' },
   { title: 'Sass' },
-  { title: 'Javascript' },
+  { title: 'React' },
   { title: 'Typescript' },
   { title: 'Next.js' },
+  { title: 'Vite' },
   { title: 'Webpack' },
-  { title: 'Appolo' },
-  { title: 'Java' },
-  { title: 'Node.js' },
-  { title: 'Express.js' },
-  { title: 'GraphQL' },
+  { title: 'PostgreSQL' },
+  { title: 'Javascript' },
+  { title: 'NodeJS' },
+  { title: 'Golang' },
+  { title: 'Cypress' },
+  { title: 'Jest' },
   { title: 'Python' },
   { title: 'Django' },
-  { title: 'OpenAI API' },
+  { title: 'AI Technologies' },
 ];
 export const contactsArray: ContactsArrayType[] = [
   { iconSrc: 'assets/message.svg', altInfo: 'message', info: 'ibugaenko21@gmail.com', link: '#' },

@@ -3,9 +3,7 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 
 import Button from '../../Button';
 import Input from '../../Input';
-import Select from '../../Select';
 import CheckBox from '../../CheckBox';
-import { OptionsArray } from '../../../config';
 
 import styles from './Form.module.css';
 import { sendData } from '../../../../api';
@@ -29,7 +27,7 @@ export const Form = () => {
   });
 
   const onSubmit: SubmitHandler<FormData> = async data => {
-    const res = await sendData(data, '');
+    const res = await sendData(data);
     console.log(res);
   };
 

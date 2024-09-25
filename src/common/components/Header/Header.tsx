@@ -28,7 +28,7 @@ export const Header = () => (
         </ul>
       </nav>
       <div className={styles.button_container}>
-        <Link className={styles.img_link} to='#'>
+        <Link className={styles.img_link} target='_blank' to='https://t.me/ewan9999'>
           <FaTelegramPlane style={{ marginRight: '2px' }} fontSize={20} color='#00CCA3' />
         </Link>
         <ScrollLink to='ContactInfo' spy={true} smooth={true} offset={-40}>
