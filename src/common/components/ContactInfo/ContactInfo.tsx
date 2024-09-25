@@ -10,8 +10,8 @@ export const ContactInfo = () => (
   <div id='ContactInfo' className={styles.container}>
     <div className={styles.container_contact}>
       <div className={styles.container_contact_block}>
-        <img src='/assets/Group1.svg' alt='logo' />
         <div className={styles.container_contact_title}>
+          <img className={styles.img_logo} src='/assets/Group2.svg' alt='logo' />
           <h3>Contact Information</h3>
           <p>Say something to start a live chat!</p>
         </div>

@@ -11,7 +11,7 @@ import { Link as ScrollLink } from 'react-scroll/modules';
 export const OurService = () => (
   <div id='OurService' className={styles.container}>
     <div className={styles.info}>
-      <h2 className={styles.title}>Our Service</h2>
+      <h2 className={styles.title}>Our Advantages</h2>
       <p className={styles.content}>
         Unlock top-tier IT talent effortlessly. Seeking a senior engineer or mid-level developer? Partner with Feel IT
         Studio to scale your team with precision. We manage HR, legal, and tax intricacies, enabling you to concentrate

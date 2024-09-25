@@ -4,19 +4,19 @@ import { Link } from 'react-router-dom';
 import { socialNetworksArray } from 'common/config';
 
 import styles from './footer.module.css';
+import { FaTelegramPlane } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 
 export const Footer = () => (
   <footer className={styles.footer}>
-    <img className={styles.text_logo} src='/assets/Group3.svg' alt='TextLogo' />
-    <img className={styles.logo} src='/assets/Group1.svg' alt='Logo' />
+    <img className={styles.text_logo} src='/assets/Group2.svg' alt='TextLogo' />
     <ul className={styles.list}>
-      {socialNetworksArray.map((item, index) => (
-        <li key={index}>
-          <Link to={item.link}>
-            <img className={styles.img} src={item.icon} alt='SocialNetwork' />
-          </Link>
-        </li>
-      ))}
+      <Link className={styles.img_link} to='#'>
+        <FaTelegramPlane style={{ marginRight: '2px' }} fontSize={20} color='#00CCA3' />
+      </Link>
+      <Link className={styles.img_link} to='#'>
+        <FaInstagram fontSize={20} color='#00CCA3' />
+      </Link>
     </ul>
   </footer>
 );

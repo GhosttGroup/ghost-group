@@ -2,6 +2,7 @@ import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { Link } from 'react-router-dom';
 
+import { FaTelegramPlane } from 'react-icons/fa';
 import Button from '../Button';
 import { headerArray } from 'common/config';
 
@@ -12,7 +13,7 @@ export const Header = () => (
     <div className={styles.container}>
       <div className={styles.logo_container}>
         <Link className={styles.link_logo} to='#'>
-          <img className={styles.img_logo} src='/assets/Group3.svg' alt='logo' />
+          <img className={styles.img_logo} src='/assets/Group2.svg' alt='logo' />
         </Link>
       </div>
       <nav className={styles.nav}>
@@ -28,7 +29,7 @@ export const Header = () => (
       </nav>
       <div className={styles.button_container}>
         <Link className={styles.img_link} to='#'>
-          <img src='/assets/iconButton.svg' alt='iconButton' />
+          <FaTelegramPlane style={{ marginRight: '2px' }} fontSize={20} color='#00CCA3' />
         </Link>
         <ScrollLink to='ContactInfo' spy={true} smooth={true} offset={-40}>
           <Button size='md'>Contact us</Button>

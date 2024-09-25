@@ -15,7 +15,6 @@ export type FormData = {
   email: string;
   phoneNumber?: string;
   companyName?: string;
-  service: string;
   additionalInfo?: string;
   nda?: boolean;
 };
@@ -33,6 +32,7 @@ export const Form = () => {
     const res = await sendData(data, '');
     console.log(res);
   };
+
   return (
     <form className={styles.container} onSubmit={handleSubmit(onSubmit)}>
       <div className={styles.container_inputs}>
@@ -82,24 +82,12 @@ export const Form = () => {
               errors={errors}
             />
           </div>
-          <div className={styles.input_wrapper}>
-            <Select
-              options={OptionsArray}
-              label={'Services'}
-              defaultText={'Select a service'}
-              register={register}
-              name={'service'}
-              rules={{ required: 'Field is required' }}
-              errors={errors}
-            />
-          </div>
         </div>
         <Input label={'Tell us more'} name={'moreInfo'} register={register} />
         <div className={styles.container_controls}>
           <CheckBox register={register} name='NDA' label='Do you need a NDA?' />
           <div className={styles.controls_buttons}>
-            <Button size='xm'>Upload CV</Button>
-            <Button buttonType='secondary' size='xm' type='submit'>
+            <Button size='xm' type='submit'>
               Send Message
             </Button>
           </div>
